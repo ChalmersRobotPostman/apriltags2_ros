@@ -52,7 +52,7 @@ def QRfunction():
             pub.publish(pub_mess)
             rate_sub.sleep()
 
-        elif received[0].id[0]==30 and flag == 0: # 30: robot will go outside the elevator
+        elif received[0].id[0]==01 and flag == 0: # 1: robot will go outside the elevator
             pub_mess = 'elevatortwo'
             rospy.loginfo(pub_mess)
             pub.publish(pub_mess)
